@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "AlexBrush-regular";
+    src: url(../Tipografia/Alex_Brush/AlexBrush-Regular.ttf);
+}
+
+/* Etiquetas */
+
+.texto {
+    font-family: 'Playfair-Display', serif;
+    src: url(../Tipografia/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+}
+
+h1 {
+    text-align: center;
+    font-family: "AlexBrush-regular", cursive;
+    color: black;
+    margin: 40px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+/* Clases class="" */
+.fondoRosa {
+    /* Estilos */
+    background-color: #FBE8E7;
+}
+
+/* IDs */
+#uno {
+    /* Estilos */
+    background-color: royalblue;
+    /* Los ID no se pueden repertir, sin embargo las clases si */
+}
+
+
+nav ul li {
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: #FCF5EE;
+    color: white;
+    text-emphasis-style: none;
+}
+
+nav {
+    background-color: #FFC4D0;
+    text-decoration: none;
+    color: white;
+}
+
+main section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+footer {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+article section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+main article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+
+.home {
+    margin: 5%;
+    padding: 20px;
+    align-content: center;
+    background-color: #F7DDDE;
+}
+
+.carrusel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.contenidoRecetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: justify;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.logo {
+    display: flex;
+    width: 170px;
+    height: 170px;
+}
+
+.menu-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: top 10vh;
+
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
