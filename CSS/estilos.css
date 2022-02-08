@@ -36,24 +36,26 @@ ul {
 }
 
 nav ul li {
-    width: 150px;
-    height: 30px;
-    border-radius: 3px;
+    display: inline-block;
+    background-color: #FBE8E7;
     text-align: center;
-    text-decoration: none;
+    padding: 10px 22px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 12px
 }
 
 nav li:hover {
     background-color: #FCF5EE;
     color: white;
-    text-emphasis-style: none;
+
+
 }
 
 nav {
-    display: flex;
+    display: inline-block;
     background-color: #FFC4D0;
     text-decoration: none;
-    color: white;
 }
 
 section {
@@ -117,6 +119,16 @@ main img {
 
 }
 
+form {
+    display: flex;
+    margin: 40px;
+    padding: 25px;
+    justify-self: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100vh;
+}
+
 main article {
     display: flex;
     flex-direction: column;
@@ -132,8 +144,32 @@ aside ul {
     animation-iteration-count: 1;
 }
 
+a:link {
+    text-decoration: none;
+    color: black;
+    border: inherit 10px;
+}
+
+.contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fondoGrad {
+    background-image: linear-gradient(#FFAFBD, #ffc3a0);
+    border-radius: 8px;
+}
+
+
 .textoColorido {
     background-color: lightgray;
+}
+
+.cursiva {
+    font-family: "AlexBrush-regular";
+    text-align: center;
+
 }
 
 .flex {
@@ -165,10 +201,12 @@ aside ul {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    justify-self: center;
     justify-content: space-between;
     align-items: center;
     margin-top: 2%;
     margin-bottom: 2%;
+    width: 50%;
 }
 
 .redes {
@@ -233,6 +271,10 @@ main {
     grid-area: galeria;
 }
 
+form {
+    grid-area: consulta;
+}
+
 
 
 .gridHome {
@@ -240,7 +282,6 @@ main {
     width: 100%;
     height: 145vh;
     grid-column-gap: 10px;
-    grid-template-rows: 2fr 0.2fr 3fr 5fr 0.5fr;
     grid-template-columns: 25% auto 15%;
     grid-template-areas:
         "logo titulo redes"
@@ -248,6 +289,7 @@ main {
         "carrusel carrusel carrusel"
         "articulos articulos articulos"
         "pie pie pie";
+    grid-template-rows: 2fr 0.33fr 4fr 3fr 0.5fr;
 
 }
 
@@ -256,7 +298,7 @@ main {
     width: 100%;
     height: 145vh;
     grid-column-gap: 10px;
-    grid-template-rows: 2fr 2fr 6fr 0.5fr;
+    grid-template-rows: 1.5fr 0.33fr 6fr 0.5fr;
     grid-template-columns: 25% auto 15%;
     grid-template-areas:
         "logo titulo redes"
@@ -285,7 +327,7 @@ main {
     width: 100%;
     height: 145vh;
     grid-column-gap: 10px;
-    grid-template-rows: 1fr 0.1fr 6fr 0.2fr;
+    grid-template-rows: 2fr 0.33fr 3fr 0.5fr;
     grid-template-columns: 25% auto 15%;
     grid-template-areas:
         "logo titulo redes"
@@ -299,12 +341,12 @@ main {
     width: 100%;
     height: 145vh;
     grid-column-gap: 10px;
-    grid-template-rows: 2fr 0.2fr 3fr 5fr 0.5fr;
+    grid-template-rows: 1.3fr 0.30fr 4fr 3fr 0.5fr;
     grid-template-columns: 25% auto 15%;
     grid-template-areas:
         "logo titulo redes"
         "menu menu menu"
-        "carrusel carrusel carrusel"
+        "consulta consulta consulta"
         "articulos articulos articulos"
         "pie pie pie";
 }
