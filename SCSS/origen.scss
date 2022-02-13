@@ -53,6 +53,7 @@ nav {
     text-decoration: none;
 
     ul {
+
         list-style-type: none;
 
         li {
@@ -81,12 +82,16 @@ section {
     article {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
         margin-top: 2%;
         margin-bottom: 2%;
         width: 60%;
+    }
+
+    p {
+        text-align: center;
     }
 }
 
@@ -146,5 +151,6 @@ aside {
         animation-duration: 4s;
         animation-name: aparecer;
         animation-iteration-count: 1;
+        list-style-type: none;
     }
 }

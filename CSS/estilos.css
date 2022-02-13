@@ -183,17 +183,17 @@ form {
     display: flex;
     align-content: center;
     margin: 1%; }
-  main img {
-    margin: 2%;
-    padding: 1%;
-    background-image: linear-gradient(#FEE3EC, #FFC4D0);
-    border-radius: 15px;
-    height: 245px;
-    width: 245px; }
-  main h2 {
-    font-family: "AlexBrush-regular", cursive;
-    background-color: lightgray;
-    font-size: 30px; }
+    main img {
+      margin: 2%;
+      padding: 1%;
+      background-image: linear-gradient(#FEE3EC, #FFC4D0);
+      border-radius: 15px;
+      height: 245px;
+      width: 245px; }
+    main h2 {
+      font-family: "AlexBrush-regular", cursive;
+      background-color: lightgray;
+      font-size: 30px; }
   form {
     display: flex;
     margin: 40px;
@@ -238,17 +238,17 @@ form {
     margin-left: 5%;
     margin-right: 5%;
     background-color: #F7DDDE; }
+    article img {
+      display: flex;
+      width: 252px;
+      height: 252px;
+      padding: 5%;
+      margin: 3%; }
   section {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center; }
-  article img {
-    display: flex;
-    width: 252px;
-    height: 252px;
-    padding: 5%;
-    margin: 3%; }
   .nombrePagina {
     display: flex;
     flex-wrap: wrap;
@@ -335,12 +335,14 @@ section {
   section article {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 2%;
     margin-bottom: 2%;
     width: 60%; }
+  section p {
+    text-align: center; }
 
 article {
   display: flex;
@@ -382,4 +384,5 @@ form {
 aside ul {
   animation-duration: 4s;
   animation-name: aparecer;
-  animation-iteration-count: 1; }
+  animation-iteration-count: 1;
+  list-style-type: none; }
