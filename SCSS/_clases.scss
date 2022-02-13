@@ -1,0 +1,84 @@
+.contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fondoGrad {
+    background-image: linear-gradient(#FFAFBD, #ffc3a0);
+    border-radius: 8px;
+}
+
+
+.textoColorido {
+    background-color: lightgray;
+}
+
+.cursiva {
+    font-family: "AlexBrush-regular";
+    text-align: center;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    justify-items: center;
+    margin: 5%;
+}
+
+.menuFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    justify-self: stretch;
+    width: 100%;
+}
+
+.carrusel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-self: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 50%;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-items: center;
+    margin-right: 10%;
+    width: 100%;
+}
+
+.nombrePagina {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20%;
+    justify-self: center;
+    align-items: center;
+    font-family: "AlexBrush-regular", cursive;
+
+}
+
+.recetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 5%;
+
+}

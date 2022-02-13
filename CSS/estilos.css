@@ -1,542 +1,385 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    cursor: url(../imagenes/cursor.png), auto;
-}
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: url(../imagenes/cursor.png), auto; }
+
+/*Aquí empieza grid*/
+header {
+  grid-area: logo; }
+
+span {
+  grid-area: titulo; }
+
+aside {
+  grid-area: redes; }
+
+nav {
+  grid-area: menu; }
+
+div {
+  grid-area: carrusel; }
+
+section {
+  grid-area: articulos; }
+
+footer {
+  grid-area: pie; }
+
+main {
+  grid-area: galeria; }
+
+form {
+  grid-area: consulta; }
+
+.gridHome {
+  display: grid;
+  width: 100%;
+  height: 145vh;
+  grid-column-gap: 10px;
+  grid-template-columns: 25% auto 15%;
+  grid-template-areas: "logo titulo redes" "menu menu menu" "carrusel carrusel carrusel" "articulos articulos articulos" "pie pie pie";
+  grid-template-rows: 2fr 0.33fr 4fr 3fr 0.5fr; }
+
+.gridCatalogo {
+  display: grid;
+  width: 100%;
+  height: 145vh;
+  grid-column-gap: 10px;
+  grid-template-rows: 1.5fr 0.33fr 6fr 0.5fr;
+  grid-template-columns: 25% auto 15%;
+  grid-template-areas: "logo titulo redes" "menu menu menu" "galeria galeria galeria" "pie pie pie"; }
+
+.gridRecetas {
+  display: grid;
+  width: 100%;
+  height: 145vh;
+  grid-column-gap: 10px;
+  grid-template-rows: 2fr 0.2fr 7fr 0.5fr;
+  grid-template-columns: 25% auto 15%;
+  grid-template-areas: "logo titulo redes" "menu menu menu" "galeria galeria galeria" "pie pie pie"; }
+
+.gridNosotros {
+  display: grid;
+  width: 100%;
+  height: 145vh;
+  grid-column-gap: 10px;
+  grid-template-rows: 2fr 0.33fr 3fr 0.5fr;
+  grid-template-columns: 25% auto 15%;
+  grid-template-areas: "logo titulo redes" "menu menu menu" "galeria galeria galeria" "pie pie pie"; }
+
+.gridContacto {
+  display: grid;
+  width: 100%;
+  height: 145vh;
+  grid-column-gap: 10px;
+  grid-template-rows: 1.3fr 0.30fr 4fr 3fr 0.5fr;
+  grid-template-columns: 25% auto 15%;
+  grid-template-areas: "logo titulo redes" "menu menu menu" "consulta consulta consulta" "articulos articulos articulos" "pie pie pie"; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 @font-face {
-    font-family: "AlexBrush-regular";
-    src: url(../Tipografia/Alex_Brush/AlexBrush-Regular.ttf);
-}
+  font-family: "AlexBrush-regular";
+  src: url(../Tipografia/Alex_Brush/AlexBrush-Regular.ttf); }
 
-h1 {
+.contactos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.fondoGrad {
+  background-image: linear-gradient(#FFAFBD, #ffc3a0);
+  border-radius: 8px; }
+
+.textoColorido {
+  background-color: lightgray; }
+
+.cursiva {
+  font-family: "AlexBrush-regular";
+  text-align: center; }
+
+.flex {
+  display: flex; }
+
+.logo {
+  display: flex;
+  justify-items: center;
+  margin: 5%; }
+
+.menuFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  justify-self: stretch;
+  width: 100%; }
+
+.carrusel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-self: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 50%; }
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-items: center;
+  margin-right: 10%;
+  width: 100%; }
+
+.nombrePagina {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20%;
+  justify-self: center;
+  align-items: center;
+  font-family: "AlexBrush-regular", cursive; }
+
+.recetas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 5%; }
+
+/*Tablet*/
+@media (min-width: 577px) and (max-width: 1024px) {
+  h1 {
     text-align: center;
     font-family: "AlexBrush-regular", cursive;
     color: black;
     justify-content: center;
-    font-size: 4.2rem;
+    font-size: 2.5rem;
     align-items: center;
-    margin-top: 5%;
-}
-
-body {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    background-color: #FCF5EE;
-}
-
-a {
-    cursor: url(../imagenes/cursor2.png), auto;
-}
-
-ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline-block;
-    background-color: #FBE8E7;
-    text-align: center;
-    padding: 10px 22px;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 12px
-}
-
-nav li:hover {
-    background-color: #FCF5EE;
-    color: white;
-
-
-}
-
-nav {
-    display: inline-block;
-    background-color: #FFC4D0;
-    text-decoration: none;
-}
-
-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-}
-
-footer {
-    display: flex;
-    margin-top: 50px;
-    align-items: center;
-    justify-content: center;
-    background-color: gray;
-}
-
-section article {
+    margin-top: 15%; }
+  section {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    width: 60%;
-}
-
-article {
+    align-items: center; }
+  article img {
     display: flex;
-    margin: 5%;
-    background-color: #F7DDDE;
-}
-
-article h2 {
-    margin: 10px;
-}
-
-article p {
-    margin: 10px;
-    padding: 10px;
-}
-
-main {
-    margin: 1%;
-
-}
-
-main h2 {
-    font-family: "AlexBrush-regular", cursive;
-    font-size: 35px;
-
-}
-
-main img {
+    height: 294px;
+    width: 294px;
+    padding: 5%;
+    margin: 3%; }
+  main {
+    display: flex;
+    align-content: center;
+    margin: 1%; }
+  main img {
     margin: 2%;
     padding: 1%;
     background-image: linear-gradient(#FEE3EC, #FFC4D0);
     border-radius: 15px;
-
-
-}
-
-form {
+    height: 245px;
+    width: 245px; }
+  main h2 {
+    font-family: "AlexBrush-regular", cursive;
+    background-color: lightgray;
+    font-size: 30px; }
+  form {
     display: flex;
     margin: 40px;
     padding: 25px;
     justify-self: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 100vh;
-}
-
-main article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: center;
-    text-align: center;
-    justify-content: space-around;
-}
-
-aside ul {
-    animation-duration: 4s;
-    animation-name: aparecer;
-    animation-iteration-count: 1;
-}
-
-a:link {
-    text-decoration: none;
-    color: black;
-    border: inherit 10px;
-}
-
-.contactos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.fondoGrad {
-    background-image: linear-gradient(#FFAFBD, #ffc3a0);
-    border-radius: 8px;
-}
-
-
-.textoColorido {
-    background-color: lightgray;
-}
-
-.cursiva {
-    font-family: "AlexBrush-regular";
-    text-align: center;
-
-}
-
-.flex {
-    display: flex;
-}
-
-.logo {
+    width: 80vh; }
+  .logo {
     display: flex;
     justify-items: center;
     margin: 5%;
-}
-
-.menuFlex {
+    width: 120px;
+    height: 119px; }
+  .nombrePagina {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    flex-wrap: wrap;
+    margin: 15%;
+    justify-self: center;
     align-items: center;
-    justify-self: stretch;
-    width: 100%;
-}
+    font-size: 2rem;
+    font-family: "AlexBrush-regular", cursive; } }
 
-.carrusel {
+/*Movil*/
+@media (min-width: 0px) and (max-width: 576px) {
+  h1 {
+    text-align: center;
+    font-family: "AlexBrush-regular", cursive;
+    color: black;
+    justify-content: center;
+    font-size: 2rem;
+    align-items: center;
+    margin-top: 20%; }
+  article {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-self: center;
     justify-content: space-between;
     align-items: center;
     margin-top: 2%;
     margin-bottom: 2%;
-    width: 50%;
-}
-
-.redes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    align-items: center;
-    margin-right: 10%;
-    width: 100%;
-}
-
-.nombrePagina {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20%;
-    justify-self: center;
-    align-items: center;
-    font-family: "AlexBrush-regular", cursive;
-
-}
-
-.recetas {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #F7DDDE; }
+  section {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
+    flex-wrap: nowrap;
+    align-items: center; }
+  article img {
+    display: flex;
+    width: 252px;
+    height: 252px;
+    padding: 5%;
+    margin: 3%; }
+  .nombrePagina {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12%;
+    justify-self: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: "AlexBrush-regular", cursive; }
+  .logo {
+    display: flex;
+    justify-items: center;
     margin: 5%;
+    width: 100px;
+    height: 99px; }
+  main img {
+    margin: 2%;
+    padding: 1%;
+    background-image: linear-gradient(#FEE3EC, #FFC4D0);
+    border-radius: 15px;
+    height: 210px;
+    width: 210px; }
+  main h2 {
+    font-family: "AlexBrush-regular", cursive;
+    background-color: lightgray;
+    font-size: 30px; }
+  form {
+    display: flex;
+    margin: 40px;
+    padding: 25px;
+    justify-self: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 60vh; } }
 
-}
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #FCF5EE; }
+  body a {
+    cursor: url(../imagenes/cursor2.png), auto; }
+    body a:link {
+      text-decoration: none;
+      color: black;
+      border: inherit 10px; }
+  body footer {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: gray; }
 
-/*Aquí empieza grid*/
-header {
-    grid-area: logo;
-}
-
-span {
-    grid-area: titulo;
-}
-
-aside {
-    grid-area: redes;
-}
+h1 {
+  text-align: center;
+  font-family: "AlexBrush-regular", cursive;
+  color: black;
+  justify-content: center;
+  font-size: 4.2rem;
+  align-items: center;
+  margin-top: 5%; }
 
 nav {
-    grid-area: menu;
-}
-
-div {
-    grid-area: carrusel;
-}
+  display: inline-block;
+  background-color: #FFC4D0;
+  text-decoration: none; }
+  nav ul {
+    list-style-type: none; }
+    nav ul li {
+      display: inline-block;
+      background-color: #FBE8E7;
+      text-align: center;
+      padding: 10px 22px;
+      text-align: center;
+      font-size: 16px;
+      border-radius: 12px; }
+      nav ul li:hover {
+        background-color: #FCF5EE;
+        color: white; }
 
 section {
-    grid-area: articulos;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  section article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 60%; }
 
-footer {
-    grid-area: pie;
-}
+article {
+  display: flex;
+  margin: 5%;
+  background-color: #F7DDDE; }
+  article h2 {
+    margin: 10px; }
+  article p {
+    margin: 10px;
+    padding: 10px; }
 
 main {
-    grid-area: galeria;
-}
+  margin: 1%; }
+  main h2 {
+    font-family: "AlexBrush-regular", cursive;
+    font-size: 35px; }
+  main img {
+    margin: 2%;
+    padding: 1%;
+    background-image: linear-gradient(#FEE3EC, #FFC4D0);
+    border-radius: 15px; }
+  main article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    justify-content: space-around; }
 
 form {
-    grid-area: consulta;
-}
+  display: flex;
+  margin: 40px;
+  padding: 25px;
+  justify-self: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100vh; }
 
-
-
-.gridHome {
-    display: grid;
-    width: 100%;
-    height: 145vh;
-    grid-column-gap: 10px;
-    grid-template-columns: 25% auto 15%;
-    grid-template-areas:
-        "logo titulo redes"
-        "menu menu menu"
-        "carrusel carrusel carrusel"
-        "articulos articulos articulos"
-        "pie pie pie";
-    grid-template-rows: 2fr 0.33fr 4fr 3fr 0.5fr;
-
-}
-
-.gridCatalogo {
-    display: grid;
-    width: 100%;
-    height: 145vh;
-    grid-column-gap: 10px;
-    grid-template-rows: 1.5fr 0.33fr 6fr 0.5fr;
-    grid-template-columns: 25% auto 15%;
-    grid-template-areas:
-        "logo titulo redes"
-        "menu menu menu"
-        "galeria galeria galeria"
-        "pie pie pie";
-}
-
-.gridRecetas {
-    display: grid;
-    width: 100%;
-    height: 145vh;
-    grid-column-gap: 10px;
-    grid-template-rows: 2fr 0.2fr 7fr 0.5fr;
-    grid-template-columns: 25% auto 15%;
-    grid-template-areas:
-        "logo titulo redes"
-        "menu menu menu"
-        "galeria galeria galeria"
-        "pie pie pie";
-
-}
-
-.gridNosotros {
-    display: grid;
-    width: 100%;
-    height: 145vh;
-    grid-column-gap: 10px;
-    grid-template-rows: 2fr 0.33fr 3fr 0.5fr;
-    grid-template-columns: 25% auto 15%;
-    grid-template-areas:
-        "logo titulo redes"
-        "menu menu menu"
-        "galeria galeria galeria"
-        "pie pie pie";
-}
-
-.gridContacto {
-    display: grid;
-    width: 100%;
-    height: 145vh;
-    grid-column-gap: 10px;
-    grid-template-rows: 1.3fr 0.30fr 4fr 3fr 0.5fr;
-    grid-template-columns: 25% auto 15%;
-    grid-template-areas:
-        "logo titulo redes"
-        "menu menu menu"
-        "consulta consulta consulta"
-        "articulos articulos articulos"
-        "pie pie pie";
-}
-
-
-@keyframes aparecer {
-
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-/*Tablet*/
-@media (min-width: 577px) and (max-width: 1024px) {
-
-    h1 {
-        text-align: center;
-        font-family: "AlexBrush-regular", cursive;
-        color: black;
-        justify-content: center;
-        font-size: 2.5rem;
-        align-items: center;
-        margin-top: 15%;
-    }
-
-
-    section {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-
-    article img {
-        display: flex;
-        height: 294px;
-        width: 294px;
-        padding: 5%;
-        margin: 3%;
-    }
-
-    main {
-        display: flex;
-        align-content: center;
-        margin: 1%;
-
-    }
-
-    main img {
-        margin: 2%;
-        padding: 1%;
-        background-image: linear-gradient(#FEE3EC, #FFC4D0);
-        border-radius: 15px;
-        height: 245px;
-        width: 245px;
-
-
-    }
-
-    main h2 {
-        font-family: "AlexBrush-regular", cursive;
-        background-color: lightgray;
-        font-size: 30px;
-
-    }
-
-    form {
-        display: flex;
-        margin: 40px;
-        padding: 25px;
-        justify-self: center;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        width: 80vh;
-    }
-
-    .logo {
-        display: flex;
-        justify-items: center;
-        margin: 5%;
-        width: 120px;
-        height: 119px;
-    }
-
-    .nombrePagina {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 15%;
-        justify-self: center;
-        align-items: center;
-        font-size: 2rem;
-        font-family: "AlexBrush-regular", cursive;
-
-    }
-
-
-
-
-}
-
-/*Movil*/
-
-@media (min-width: 0px) and (max-width: 576px) {
-
-    h1 {
-        text-align: center;
-        font-family: "AlexBrush-regular", cursive;
-        color: black;
-        justify-content: center;
-        font-size: 2rem;
-        align-items: center;
-        margin-top: 20%;
-    }
-
-
-
-    article {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        margin-left: 5%;
-        margin-right: 5%;
-        background-color: #F7DDDE;
-    }
-
-    section {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-
-    }
-
-    article img {
-        display: flex;
-        width: 252px;
-        height: 252px;
-        padding: 5%;
-        margin: 3%;
-    }
-
-    .nombrePagina {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 12%;
-        justify-self: center;
-        align-items: center;
-        font-size: 1.5rem;
-        font-family: "AlexBrush-regular", cursive;
-
-    }
-
-    
-    .logo {
-        display: flex;
-        justify-items: center;
-        margin: 5%;
-        width: 100px;
-        height: 99px;
-    }
-
-    main img {
-        margin: 2%;
-        padding: 1%;
-        background-image: linear-gradient(#FEE3EC, #FFC4D0);
-        border-radius: 15px;
-        height: 210px;
-        width: 210px;
-    }
-
-    main h2 {
-        font-family: "AlexBrush-regular", cursive;
-        background-color: lightgray;
-        font-size: 30px;
-    }
-
-    form {
-        display: flex;
-        margin: 40px;
-        padding: 25px;
-        justify-self: center;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        width: 60vh;
-    }
-
-
-}
+aside ul {
+  animation-duration: 4s;
+  animation-name: aparecer;
+  animation-iteration-count: 1; }

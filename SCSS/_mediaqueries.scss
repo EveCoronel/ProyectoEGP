@@ -1,0 +1,182 @@
+
+
+/*Tablet*/
+@media (min-width: 577px) and (max-width: 1024px) {
+
+    h1 {
+        text-align: center;
+        font-family: "AlexBrush-regular", cursive;
+        color: black;
+        justify-content: center;
+        font-size: 2.5rem;
+        align-items: center;
+        margin-top: 15%;
+    }
+
+
+    section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    article img {
+        display: flex;
+        height: 294px;
+        width: 294px;
+        padding: 5%;
+        margin: 3%;
+    }
+
+    main {
+        display: flex;
+        align-content: center;
+        margin: 1%;
+
+    }
+
+    main img {
+        margin: 2%;
+        padding: 1%;
+        background-image: linear-gradient(#FEE3EC, #FFC4D0);
+        border-radius: 15px;
+        height: 245px;
+        width: 245px;
+
+
+    }
+
+    main h2 {
+        font-family: "AlexBrush-regular", cursive;
+        background-color: lightgray;
+        font-size: 30px;
+
+    }
+
+    form {
+        display: flex;
+        margin: 40px;
+        padding: 25px;
+        justify-self: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 80vh;
+    }
+
+    .logo {
+        display: flex;
+        justify-items: center;
+        margin: 5%;
+        width: 120px;
+        height: 119px;
+    }
+
+    .nombrePagina {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 15%;
+        justify-self: center;
+        align-items: center;
+        font-size: 2rem;
+        font-family: "AlexBrush-regular", cursive;
+
+    }
+
+
+
+
+}
+
+/*Movil*/
+
+@media (min-width: 0px) and (max-width: 576px) {
+
+    h1 {
+        text-align: center;
+        font-family: "AlexBrush-regular", cursive;
+        color: black;
+        justify-content: center;
+        font-size: 2rem;
+        align-items: center;
+        margin-top: 20%;
+    }
+
+
+
+    article {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: #F7DDDE;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+
+    }
+
+    article img {
+        display: flex;
+        width: 252px;
+        height: 252px;
+        padding: 5%;
+        margin: 3%;
+    }
+
+    .nombrePagina {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 12%;
+        justify-self: center;
+        align-items: center;
+        font-size: 1.5rem;
+        font-family: "AlexBrush-regular", cursive;
+
+    }
+
+    
+    .logo {
+        display: flex;
+        justify-items: center;
+        margin: 5%;
+        width: 100px;
+        height: 99px;
+    }
+
+    main img {
+        margin: 2%;
+        padding: 1%;
+        background-image: linear-gradient(#FEE3EC, #FFC4D0);
+        border-radius: 15px;
+        height: 210px;
+        width: 210px;
+    }
+
+    main h2 {
+        font-family: "AlexBrush-regular", cursive;
+        background-color: lightgray;
+        font-size: 30px;
+    }
+
+    form {
+        display: flex;
+        margin: 40px;
+        padding: 25px;
+        justify-self: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 60vh;
+    }
+
+
+}

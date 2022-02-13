@@ -1,0 +1,114 @@
+
+/*Aquí empieza grid*/
+
+header {
+    grid-area: logo;
+}
+
+span {
+    grid-area: titulo;
+}
+
+aside {
+    grid-area: redes;
+}
+
+nav {
+    grid-area: menu;
+}
+
+div {
+    grid-area: carrusel;
+}
+
+section {
+    grid-area: articulos;
+}
+
+footer {
+    grid-area: pie;
+}
+
+main {
+    grid-area: galeria;
+}
+
+form {
+    grid-area: consulta;
+}
+
+
+
+.gridHome {
+    display: grid;
+    width: 100%;
+    height: 145vh;
+    grid-column-gap: 10px;
+    grid-template-columns: 25% auto 15%;
+    grid-template-areas:
+        "logo titulo redes"
+        "menu menu menu"
+        "carrusel carrusel carrusel"
+        "articulos articulos articulos"
+        "pie pie pie";
+    grid-template-rows: 2fr 0.33fr 4fr 3fr 0.5fr;
+
+}
+
+.gridCatalogo {
+    display: grid;
+    width: 100%;
+    height: 145vh;
+    grid-column-gap: 10px;
+    grid-template-rows: 1.5fr 0.33fr 6fr 0.5fr;
+    grid-template-columns: 25% auto 15%;
+    grid-template-areas:
+        "logo titulo redes"
+        "menu menu menu"
+        "galeria galeria galeria"
+        "pie pie pie";
+}
+
+.gridRecetas {
+    display: grid;
+    width: 100%;
+    height: 145vh;
+    grid-column-gap: 10px;
+    grid-template-rows: 2fr 0.2fr 7fr 0.5fr;
+    grid-template-columns: 25% auto 15%;
+    grid-template-areas:
+        "logo titulo redes"
+        "menu menu menu"
+        "galeria galeria galeria"
+        "pie pie pie";
+
+}
+
+.gridNosotros {
+    display: grid;
+    width: 100%;
+    height: 145vh;
+    grid-column-gap: 10px;
+    grid-template-rows: 2fr 0.33fr 3fr 0.5fr;
+    grid-template-columns: 25% auto 15%;
+    grid-template-areas:
+        "logo titulo redes"
+        "menu menu menu"
+        "galeria galeria galeria"
+        "pie pie pie";
+}
+
+.gridContacto {
+    display: grid;
+    width: 100%;
+    height: 145vh;
+    grid-column-gap: 10px;
+    grid-template-rows: 1.3fr 0.30fr 4fr 3fr 0.5fr;
+    grid-template-columns: 25% auto 15%;
+    grid-template-areas:
+        "logo titulo redes"
+        "menu menu menu"
+        "consulta consulta consulta"
+        "articulos articulos articulos"
+        "pie pie pie";
+}
