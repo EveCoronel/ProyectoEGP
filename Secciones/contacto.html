@@ -28,13 +28,20 @@
         <h2 class="nombrePagina">Contacto</h2>
     </aside>
 
-    <nav class="menuFlex">
+    <nav class="menuFlex nav navbar navbar-expand-lg">
         <ul class="menuFlex">
             <li><a href="../index.html">Home</a></li>
             <li><a href="catálogo.html">Catálogo</a></li>
             <li><a href="recetas.html">Recetas</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nosotros
+                </a>
+                <ul class="dropdown-menu boton" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                  <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 

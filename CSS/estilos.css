@@ -131,7 +131,7 @@ form {
   align-items: center;
   margin-top: 2%;
   margin-bottom: 2%;
-  width: 50%; }
+  width: 45%; }
 
 .redes {
   display: flex;
@@ -158,6 +158,11 @@ form {
   text-align: center;
   margin: 5%; }
 
+.boton {
+  margin: 2px;
+  text-align: center;
+  justify-content: center; }
+
 /*Tablet*/
 @media (min-width: 577px) and (max-width: 1024px) {
   h1 {
@@ -171,7 +176,7 @@ form {
   section {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center; }
   article img {
     display: flex;
@@ -181,6 +186,7 @@ form {
     margin: 3%; }
   main {
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
     margin: 1%; }
     main img {
@@ -215,7 +221,17 @@ form {
     justify-self: center;
     align-items: center;
     font-size: 2rem;
-    font-family: "AlexBrush-regular", cursive; } }
+    font-family: "AlexBrush-regular", cursive; }
+  .carrusel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-self: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 60%; } }
 
 /*Movil*/
 @media (min-width: 0px) and (max-width: 576px) {
@@ -281,7 +297,17 @@ form {
     justify-self: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 60vh; } }
+    width: 60vh; }
+  .carrusel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-self: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 65%; } }
 
 body {
   display: flex;
@@ -313,7 +339,9 @@ h1 {
 nav {
   display: inline-block;
   background-color: #FFC4D0;
-  text-decoration: none; }
+  text-decoration: none;
+  padding: 0%;
+  border: solid black 2px; }
   nav ul {
     list-style-type: none; }
     nav ul li {
@@ -323,7 +351,8 @@ nav {
       padding: 10px 22px;
       text-align: center;
       font-size: 16px;
-      border-radius: 12px; }
+      border-radius: 12px;
+      margin: 2px; }
       nav ul li:hover {
         background-color: #FCF5EE;
         color: white; }

@@ -15,7 +15,7 @@
     section {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-items: center;
     }
 
@@ -33,6 +33,7 @@
     main {
 
         display: flex;
+        flex-wrap: wrap;
         align-content: center;
         margin: 1%;
 
@@ -84,8 +85,17 @@
 
     }
 
-
-
+    .carrusel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-self: center;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 60%;
+    }
 
 }
 
@@ -183,5 +193,16 @@
         width: 60vh;
     }
 
+    .carrusel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-self: center;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 65%;
+    }
 
 }
