@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   cursor: url(../imagenes/cursor.png), auto; }
 
 /*Aquí empieza grid*/
@@ -88,6 +87,15 @@ form {
   font-family: "AlexBrush-regular";
   src: url(../Tipografia/Alex_Brush/AlexBrush-Regular.ttf); }
 
+.textoGrande {
+  font-size: 4.2rem; }
+
+.textoMediano {
+  font-size: 2.3rem; }
+
+.textoChico {
+  font-size: 1.5rem; }
+
 .contactos {
   display: flex;
   flex-direction: column;
@@ -163,16 +171,122 @@ form {
   text-align: center;
   justify-content: center; }
 
+.recetasImagenes {
+  width: 650px;
+  height: 350px; }
+
+.textoGrande {
+  font-size: 4.2rem; }
+
+.textoMediano {
+  font-size: 2.3rem; }
+
+.textoChico {
+  font-size: 1.5rem; }
+
+.textoGrande {
+  font-size: 4.2rem; }
+
+.textoMediano {
+  font-size: 2.3rem; }
+
+.textoChico {
+  font-size: 1.5rem; }
+
+.contactos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.fondoGrad {
+  background-image: linear-gradient(#FFAFBD, #ffc3a0);
+  border-radius: 8px; }
+
+.textoColorido {
+  background-color: lightgray; }
+
+.cursiva {
+  font-family: "AlexBrush-regular";
+  text-align: center; }
+
+.flex {
+  display: flex; }
+
+.logo {
+  display: flex;
+  justify-items: center;
+  margin: 5%; }
+
+.menuFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  justify-self: stretch;
+  width: 100%; }
+
+.carrusel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-self: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 45%; }
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-items: center;
+  margin-right: 10%;
+  width: 100%; }
+
+.nombrePagina {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20%;
+  justify-self: center;
+  align-items: center;
+  font-family: "AlexBrush-regular", cursive; }
+
+.recetas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 5%; }
+
+.boton {
+  margin: 2px;
+  text-align: center;
+  justify-content: center; }
+
+.recetasImagenes {
+  width: 650px;
+  height: 350px; }
+
+/*Desktop*/
+@media (min-width: 1025px) {
+  body h2 {
+    font-size: 3.5rem; }
+  body h1 {
+    font-size: 4.5rem;
+    margin-top: 5%; } }
+
 /*Tablet*/
 @media (min-width: 577px) and (max-width: 1024px) {
-  h1 {
-    text-align: center;
-    font-family: "AlexBrush-regular", cursive;
-    color: black;
-    justify-content: center;
-    font-size: 2.5rem;
-    align-items: center;
-    margin-top: 15%; }
+  body h2 {
+    font-size: 2rem; }
+  body h1 {
+    font-size: 2.8rem;
+    margin-top: 10%; }
   section {
     display: flex;
     flex-direction: column;
@@ -196,10 +310,9 @@ form {
       border-radius: 15px;
       height: 245px;
       width: 245px; }
-    main h2 {
-      font-family: "AlexBrush-regular", cursive;
-      background-color: lightgray;
-      font-size: 30px; }
+    main section {
+      display: flex;
+      flex-wrap: wrap; }
   form {
     display: flex;
     margin: 40px;
@@ -215,13 +328,13 @@ form {
     width: 120px;
     height: 119px; }
   .nombrePagina {
+    font-family: "Roboto-light";
     display: flex;
     flex-wrap: wrap;
-    margin: 15%;
+    margin: 12%;
     justify-self: center;
     align-items: center;
-    font-size: 2rem;
-    font-family: "AlexBrush-regular", cursive; }
+    writing-mode: vertical-lr; }
   .carrusel {
     display: flex;
     flex-direction: column;
@@ -231,18 +344,24 @@ form {
     align-items: center;
     margin-top: 2%;
     margin-bottom: 2%;
-    width: 60%; } }
+    width: 60%; }
+  .recetasImagenes {
+    width: 390px;
+    height: 210px; } }
 
 /*Movil*/
 @media (min-width: 0px) and (max-width: 576px) {
-  h1 {
-    text-align: center;
-    font-family: "AlexBrush-regular", cursive;
-    color: black;
-    justify-content: center;
-    font-size: 2rem;
-    align-items: center;
-    margin-top: 20%; }
+  body {
+    display: flex;
+    width: 100%;
+    height: 100vh; }
+    body h2 {
+      font-size: 2rem;
+      margin: 10%; }
+    body h1 {
+      font-size: 2.5rem;
+      align-items: center;
+      margin-top: 20%; }
   article {
     display: flex;
     flex-direction: column;
@@ -266,13 +385,13 @@ form {
     flex-wrap: wrap;
     align-items: center; }
   .nombrePagina {
+    font-family: "Roboto-light";
     display: flex;
     flex-wrap: wrap;
     margin: 12%;
     justify-self: center;
     align-items: center;
-    font-size: 1.5rem;
-    font-family: "AlexBrush-regular", cursive; }
+    writing-mode: vertical-lr; }
   .logo {
     display: flex;
     justify-items: center;
@@ -286,10 +405,6 @@ form {
     border-radius: 15px;
     height: 210px;
     width: 210px; }
-  main h2 {
-    font-family: "AlexBrush-regular", cursive;
-    background-color: lightgray;
-    font-size: 30px; }
   form {
     display: flex;
     margin: 40px;
@@ -307,13 +422,31 @@ form {
     align-items: center;
     margin-top: 2%;
     margin-bottom: 2%;
-    width: 65%; } }
+    width: 65%; }
+  .recetasImagenes {
+    width: 325px;
+    height: 175px; } }
+
+.textoGrande {
+  font-size: 4.2rem; }
+
+.textoMediano {
+  font-size: 2.3rem; }
+
+.textoChico {
+  font-size: 1.5rem; }
+
+@font-face {
+  font-family: "Roboto-light";
+  src: url(../tipografia/Roboto/Roboto-Light.ttf); }
 
 body {
   display: flex;
   width: 100%;
   height: 100vh;
-  background-color: #FCF5EE; }
+  background-color: #FCF5EE;
+  font-family: "Roboto-light";
+  font-size: large; }
   body a {
     cursor: url(../imagenes/cursor2.png), auto; }
     body a:link {
@@ -326,15 +459,13 @@ body {
     align-items: center;
     justify-content: center;
     background-color: gray; }
-
-h1 {
-  text-align: center;
-  font-family: "AlexBrush-regular", cursive;
-  color: black;
-  justify-content: center;
-  font-size: 4.2rem;
-  align-items: center;
-  margin-top: 5%; }
+  body h1 {
+    text-align: center;
+    font-family: "AlexBrush-regular", cursive;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%; }
 
 nav {
   display: inline-block;
@@ -359,6 +490,7 @@ nav {
 
 section {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly; }
   section article {
@@ -369,16 +501,29 @@ section {
     align-items: center;
     margin-top: 2%;
     margin-bottom: 2%;
-    width: 60%; }
+    width: 85%;
+    border-radius: 8px; }
   section p {
     text-align: center; }
+  section div {
+    text-decoration: none;
+    text-align: center;
+    justify-items: center;
+    margin: 30px;
+    line-height: 2.1rem; }
+    section div ul {
+      list-style: none; }
+  section h3 {
+    font-weight: bold;
+    padding: 1.5%; }
 
 article {
   display: flex;
   margin: 5%;
   background-color: #F7DDDE; }
   article h2 {
-    margin: 10px; }
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
   article p {
     margin: 10px;
     padding: 10px; }
@@ -386,13 +531,12 @@ article {
 main {
   margin: 1%; }
   main h2 {
-    font-family: "AlexBrush-regular", cursive;
-    font-size: 35px; }
+    font-family: "AlexBrush-regular", cursive; }
   main img {
     margin: 2%;
     padding: 1%;
-    background-image: linear-gradient(#FEE3EC, #FFC4D0);
-    border-radius: 15px; }
+    background-image: linear-gradient(#FFAFBD, #ffc3a0);
+    border-radius: 8px; }
   main article {
     display: flex;
     flex-direction: column;

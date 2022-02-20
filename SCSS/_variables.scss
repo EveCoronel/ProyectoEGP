@@ -1,0 +1,30 @@
+
+$tamañosTextos: (
+    Grande: 4.2rem,
+    Mediano: 2.3rem,
+    Chico: 1.5rem,
+    
+); 
+
+
+@each $clave, $valor in $tamañosTextos{
+    .texto#{$clave}{
+        font-size: $valor;
+    }
+}
+
+
+$color1: #FCF5EE;
+$color2: #FBE8E7; 
+$color3: #F7DDDE;
+$color4: #FFC4D0;
+$color5: #FFAFBD;
+$color6: #ffc3a0;
+
+$ancho: 195px;
+$alto: 105px;
+
+@mixin tamaño ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}

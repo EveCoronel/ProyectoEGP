@@ -1,3 +1,5 @@
+@import "variables";
+
 .contactos {
     display: flex;
     flex-direction: column;
@@ -88,4 +90,10 @@
     text-align: center;
     justify-content: center;
 }
+
+
+.recetasImagenes {
+    @include tamaño (650px, 350px)
+}
+
 

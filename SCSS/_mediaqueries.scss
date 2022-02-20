@@ -1,16 +1,39 @@
+@import "variables";
+@import "clases";
+
+/*Desktop*/
+
+@media (min-width: 1025px) {
+
+    body {
+
+        h2 {
+            font-size: 3.5rem;
+        }
+
+
+        h1 {
+            font-size: 4.5rem;
+            margin-top: 5%;
+        }
+    }
+}
+
 /*Tablet*/
 @media (min-width: 577px) and (max-width: 1024px) {
 
-    h1 {
-        text-align: center;
-        font-family: "AlexBrush-regular", cursive;
-        color: black;
-        justify-content: center;
-        font-size: 2.5rem;
-        align-items: center;
-        margin-top: 15%;
-    }
+    body {
 
+        h2 {
+            font-size: 2rem;
+        }
+
+
+        h1 {
+            font-size: 2.8rem;
+            margin-top: 10%;
+        }
+    }
 
     section {
         display: flex;
@@ -46,13 +69,10 @@
             width: 245px;
         }
 
-        h2 {
-            font-family: "AlexBrush-regular", cursive;
-            background-color: lightgray;
-            font-size: 30px;
-
+        section {
+            display: flex;
+            flex-wrap: wrap;
         }
-
     }
 
 
@@ -75,14 +95,13 @@
     }
 
     .nombrePagina {
+        font-family: "Roboto-light";
         display: flex;
         flex-wrap: wrap;
-        margin: 15%;
+        margin: 12%;
         justify-self: center;
         align-items: center;
-        font-size: 2rem;
-        font-family: "AlexBrush-regular", cursive;
-
+        writing-mode: vertical-lr;
     }
 
     .carrusel {
@@ -97,23 +116,38 @@
         width: 60%;
     }
 
+
+    .recetasImagenes {
+        @include tamaño (390px, 210px)
+    }
+
 }
+
+
 
 /*Movil*/
 
 @media (min-width: 0px) and (max-width: 576px) {
 
-    h1 {
-        text-align: center;
-        font-family: "AlexBrush-regular", cursive;
-        color: black;
-        justify-content: center;
-        font-size: 2rem;
-        align-items: center;
-        margin-top: 20%;
+
+    body {
+
+        display: flex;
+        width: 100%;
+        height: 100vh;
+
+        h2 {
+            font-size: 2rem;
+            margin: 10%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            align-items: center;
+            margin-top: 20%;
+        }
+
     }
-
-
 
     article {
         display: flex;
@@ -146,13 +180,13 @@
 
 
     .nombrePagina {
+        font-family: "Roboto-light";
         display: flex;
         flex-wrap: wrap;
         margin: 12%;
         justify-self: center;
         align-items: center;
-        font-size: 1.5rem;
-        font-family: "AlexBrush-regular", cursive;
+        writing-mode: vertical-lr;
 
     }
 
@@ -166,6 +200,7 @@
     }
 
     main {
+
         img {
             margin: 2%;
             padding: 1%;
@@ -174,13 +209,6 @@
             height: 210px;
             width: 210px;
         }
-
-        h2 {
-            font-family: "AlexBrush-regular", cursive;
-            background-color: lightgray;
-            font-size: 30px;
-        }
-
     }
 
     form {
@@ -205,4 +233,9 @@
         width: 65%;
     }
 
+    .recetasImagenes {
+        @include tamaño (325px, 175px)
+    }
+    
+    
 }
