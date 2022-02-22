@@ -8,7 +8,7 @@
     body {
 
         h2 {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
         }
 
 
@@ -175,6 +175,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+        height: auto;
 
     }
 
@@ -218,7 +219,7 @@
         justify-self: center;
         flex-direction: column;
         flex-wrap: nowrap;
-        width: 60vh;
+       /* width: 60vh; */
     }
 
     .carrusel {

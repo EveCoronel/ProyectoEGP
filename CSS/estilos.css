@@ -175,6 +175,9 @@ form {
   width: 650px;
   height: 350px; }
 
+.marginDiv {
+  margin: 30px; }
+
 .textoGrande {
   font-size: 4.2rem; }
 
@@ -272,10 +275,13 @@ form {
   width: 650px;
   height: 350px; }
 
+.marginDiv {
+  margin: 30px; }
+
 /*Desktop*/
 @media (min-width: 1025px) {
   body h2 {
-    font-size: 3.5rem; }
+    font-size: 2.5rem; }
   body h1 {
     font-size: 4.5rem;
     margin-top: 5%; } }
@@ -383,7 +389,8 @@ form {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center; }
+    align-items: center;
+    height: auto; }
   .nombrePagina {
     font-family: "Roboto-light";
     display: flex;
@@ -412,7 +419,7 @@ form {
     justify-self: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 60vh; }
+    /* width: 60vh; */ }
   .carrusel {
     display: flex;
     flex-direction: column;
@@ -509,7 +516,6 @@ section {
     text-decoration: none;
     text-align: center;
     justify-items: center;
-    margin: 30px;
     line-height: 2.1rem; }
     section div ul {
       list-style: none; }

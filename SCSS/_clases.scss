@@ -26,6 +26,7 @@
     display: flex;
 }
 
+
 .logo {
     display: flex;
     justify-items: center;
@@ -82,7 +83,6 @@
     justify-content: space-evenly;
     text-align: center;
     margin: 5%;
-
 }
 
 .boton {
@@ -96,4 +96,6 @@
     @include tamaño (650px, 350px)
 }
 
-
+.marginDiv {
+    margin: 30px;
+}
