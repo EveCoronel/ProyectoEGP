@@ -99,3 +99,14 @@
 .marginDiv {
     margin: 30px;
 }
+
+.preguntas {
+    margin-top: 15px;
+}
+
+/* Extend */
+
+.botonRosa {
+    @extend .boton;
+    color: $color5;
+}

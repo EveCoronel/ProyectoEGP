@@ -166,7 +166,7 @@ form {
   text-align: center;
   margin: 5%; }
 
-.boton {
+.boton, .botonRosa {
   margin: 2px;
   text-align: center;
   justify-content: center; }
@@ -177,6 +177,13 @@ form {
 
 .marginDiv {
   margin: 30px; }
+
+.preguntas {
+  margin-top: 15px; }
+
+/* Extend */
+.botonRosa {
+  color: #FFAFBD; }
 
 .textoGrande {
   font-size: 4.2rem; }
@@ -266,7 +273,7 @@ form {
   text-align: center;
   margin: 5%; }
 
-.boton {
+.boton, .botonRosa {
   margin: 2px;
   text-align: center;
   justify-content: center; }
@@ -277,6 +284,13 @@ form {
 
 .marginDiv {
   margin: 30px; }
+
+.preguntas {
+  margin-top: 15px; }
+
+/* Extend */
+.botonRosa {
+  color: #FFAFBD; }
 
 /*Desktop*/
 @media (min-width: 1025px) {
