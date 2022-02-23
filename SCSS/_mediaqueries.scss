@@ -17,6 +17,10 @@
             margin-top: 5%;
         }
     }
+
+    form {
+        width: 100vh;
+    }
 }
 
 /*Tablet*/
@@ -83,7 +87,7 @@
         justify-self: center;
         flex-direction: column;
         flex-wrap: nowrap;
-        width: 80vh;
+        width: 70vh;
     }
 
     .logo {
@@ -219,7 +223,7 @@
         justify-self: center;
         flex-direction: column;
         flex-wrap: nowrap;
-       /* width: 60vh; */
+        width: 55vh;
     }
 
     .carrusel {
@@ -239,4 +243,9 @@
     }
     
     
+    .preguntas {
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }

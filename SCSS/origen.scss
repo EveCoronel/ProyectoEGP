@@ -113,7 +113,7 @@ section {
         text-decoration: none;
         text-align: center;
         justify-items: center;
-        line-height: 2.1rem;
+        /* line-height: 2.1rem; */
 
         ul {
             list-style: none;
@@ -129,7 +129,7 @@ section {
 
 article {
     display: flex;
-    margin: 5%;
+    margin: 5%; 
     background-color: $color3;
 
     h2 {
@@ -175,7 +175,6 @@ form {
     justify-self: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 100vh;
 }
 
 aside {

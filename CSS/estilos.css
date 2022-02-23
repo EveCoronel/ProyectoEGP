@@ -298,7 +298,9 @@ form {
     font-size: 2.5rem; }
   body h1 {
     font-size: 4.5rem;
-    margin-top: 5%; } }
+    margin-top: 5%; }
+  form {
+    width: 100vh; } }
 
 /*Tablet*/
 @media (min-width: 577px) and (max-width: 1024px) {
@@ -340,7 +342,7 @@ form {
     justify-self: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 80vh; }
+    width: 70vh; }
   .logo {
     display: flex;
     justify-items: center;
@@ -433,7 +435,7 @@ form {
     justify-self: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    /* width: 60vh; */ }
+    width: 55vh; }
   .carrusel {
     display: flex;
     flex-direction: column;
@@ -446,7 +448,11 @@ form {
     width: 65%; }
   .recetasImagenes {
     width: 325px;
-    height: 175px; } }
+    height: 175px; }
+  .preguntas {
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px; } }
 
 .textoGrande {
   font-size: 4.2rem; }
@@ -530,7 +536,7 @@ section {
     text-decoration: none;
     text-align: center;
     justify-items: center;
-    line-height: 2.1rem; }
+    /* line-height: 2.1rem; */ }
     section div ul {
       list-style: none; }
   section h3 {
@@ -571,8 +577,7 @@ form {
   padding: 25px;
   justify-self: center;
   flex-direction: column;
-  flex-wrap: nowrap;
-  width: 100vh; }
+  flex-wrap: nowrap; }
 
 aside ul {
   animation-duration: 4s;
