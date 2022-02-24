@@ -21,8 +21,6 @@ $color4: #FFC4D0;
 $color5: #FFAFBD;
 $color6: #ffc3a0;
 
-$ancho: 195px;
-$alto: 105px;
 
 @mixin tamaño ($ancho, $alto) {
     width: $ancho;
