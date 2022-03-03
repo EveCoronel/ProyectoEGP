@@ -448,11 +448,7 @@ form {
     width: 65%; }
   .recetasImagenes {
     width: 325px;
-    height: 175px; }
-  .preguntas {
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px; } }
+    height: 175px; } }
 
 .textoGrande {
   font-size: 4.2rem; }
@@ -536,7 +532,7 @@ section {
     text-decoration: none;
     text-align: center;
     justify-items: center;
-    /* line-height: 2.1rem; */ }
+    line-height: 2.1rem; }
     section div ul {
       list-style: none; }
   section h3 {
