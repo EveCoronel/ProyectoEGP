@@ -185,6 +185,9 @@ form {
 .botonRosa {
   color: #FFAFBD; }
 
+.cursor {
+  cursor: url(../imagenes/cursor2.png), auto; }
+
 .textoGrande {
   font-size: 4.2rem; }
 
@@ -291,6 +294,9 @@ form {
 /* Extend */
 .botonRosa {
   color: #FFAFBD; }
+
+.cursor {
+  cursor: url(../imagenes/cursor2.png), auto; }
 
 /*Desktop*/
 @media (min-width: 1025px) {

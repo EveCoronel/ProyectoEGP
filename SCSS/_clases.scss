@@ -110,3 +110,8 @@
     @extend .boton;
     color: $color5;
 }
+
+
+.cursor {
+    cursor: url(../imagenes/cursor2.png), auto;
+}
